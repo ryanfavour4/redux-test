@@ -132,7 +132,7 @@ export function UsersSimulation() {
                     <button
                         onClick={() => {
                             dispatch(addUser(user));
-                            toast((t: Toast) => (
+                            toast.custom((t: Toast) => (
                                 <ToastComp message="Be Destroyed" t={t} />
                             ));
                         }}
